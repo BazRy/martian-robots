@@ -28,4 +28,3 @@ sample input - 	RFRFRFRF
 Sample out from the above - 1 1 E
 
 Prompts 2 & 3 will recursively appear to initialise and instruct new Robots,  to terminate type 'end' and return
-
