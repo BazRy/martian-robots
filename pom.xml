@@ -31,7 +31,7 @@
 		<dependency>
 	    	<groupId>org.apache.commons</groupId>
 		    <artifactId>commons-lang3</artifactId>
-		    <version>3.11</version>
+		    <version>3.12.0</version>
 		</dependency>
 		<dependency>
 		    <groupId>com.google.guava</groupId>
@@ -39,5 +39,24 @@
 		    <version>23.0</version>
 		</dependency>
 	</dependencies>
+	
+	<build>
+	<plugins>
+	  <plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-jar-plugin</artifactId>
+	    <version>3.1.0</version>
+	    <configuration>
+	      <archive>
+	        <manifest>
+	          <addClasspath>true</addClasspath>
+	          <classpathPrefix>classes/</classpathPrefix>
+	          <mainClass>com.lme.martian.MartianRobotsApplication</mainClass>
+	        </manifest>
+	      </archive>
+	    </configuration>
+	  </plugin>
+	</plugins>
+</build>
 
 </project>
