@@ -48,7 +48,7 @@ public class RobotTest {
 	
 	@Test
 	@Order(4)
-	public void shouldLoseRobotOffGridEncounteringMultipleLostPositions() throws GridException {
+	public void shouldNotLoseRobotOffGridEncounteringMultipleLostPositions() throws GridException {
 		Robot robotToRegisterAnotherLostPosition = defaultGrid.initialiseNewRobot(0, 3, Orientation.W);
 		Position lostPosition = new Position(-1, 3, Orientation.W);
 		assembleAndAssert("F", "0 3 W LOST", lostPosition, robotToRegisterAnotherLostPosition);
