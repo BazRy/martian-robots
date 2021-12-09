@@ -11,7 +11,7 @@ From the project root, run `mvn clean install`
 
 How to run
 ------------
-From a command line,  navigate to the projact root
+From a command line,  navigate to the project root
 run `java -jar target/martian-robots-0.0.1-SNAPSHOT.jar MartianRobotsApplication`
 
 The following prompts will appear in order:
